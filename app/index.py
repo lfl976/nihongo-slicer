@@ -34,7 +34,7 @@ def katakana_to_hiragana_convert(text):
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return 'Hello, World PY!'
 
 
 @app.route('/tokenize', methods=['GET'])
