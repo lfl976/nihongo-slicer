@@ -47,7 +47,7 @@ def tokenize():
     print(result)
     res_array = result.splitlines()[:-1]
 
-    res = [{'word': parts[0], 'reading': katakana_to_hiragana_convert(parts[1])} for parts in (item.split() for item in res_array)]
+    res = [{'word': parts[0], 'reading': katakana_to_hiragana_convert(parts[2])} for parts in (item.split() for item in res_array)]
 
     print(res)
     return jsonify(res)
